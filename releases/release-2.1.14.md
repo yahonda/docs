@@ -23,7 +23,7 @@ TiDB Ansible バージョン: 2.1.14
 -   サポートされていない集計関数の使用によって発生するpanicを修正[＃10911](https://github.com/pingcap/tidb/pull/10911)
 -   `load data`文が失敗した場合、最後のトランザクションに自動ロールバック機能を追加します[＃10862](https://github.com/pingcap/tidb/pull/10862)
 -   `OOMAction`構成項目が`Cancel` に設定されている場合に TiDB が誤った結果を返す場合がある問題を修正しました。 [＃11016](https://github.com/pingcap/tidb/pull/11016)
--   TiDBpanic問題回避するために`TRACE`文を無効にする [＃11039](https://github.com/pingcap/tidb/pull/11039)
+-   TiDBのpanic問題を回避するために`TRACE`文を無効にする [＃11039](https://github.com/pingcap/tidb/pull/11039)
 -   特定の関数をコプロセッサーにプッシュダウンすることを動的に有効/無効にする`mysql.expr_pushdown_blacklist`システム テーブルを追加します。 [＃10998](https://github.com/pingcap/tidb/pull/10998)
 -   `ANY_VALUE`機能が`ONLY_FULL_GROUP_BY`モードで動作しない問題を修正 [＃10994](https://github.com/pingcap/tidb/pull/10994)
 -   文字列型のユーザー変数を評価する際にディープコピーを行わないことで発生する誤った評価を修正しました。 [＃11043](https://github.com/pingcap/tidb/pull/11043)
