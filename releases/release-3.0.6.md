@@ -15,7 +15,7 @@ TiDB Ansible バージョン: 3.0.6
 
 -   SQLオプティマイザー
     -   ウィンドウ関数 AST が SQL テキストを復元した後に結果が正しくない (たとえば、 `over w`が誤って`over (w)` に復元される) 問題を修正しました。 [＃12933](https://github.com/pingcap/tidb/pull/12933)
-    -   `STREAM AGG()`から`doubleRead` プッシュダウンる問題を修正 [＃12690](https://github.com/pingcap/tidb/pull/12690)
+    -   `STREAM AGG()`から`doubleRead` プッシュダウンする問題を修正 [＃12690](https://github.com/pingcap/tidb/pull/12690)
     -   SQLバインディングで引用符が正しく処理されない問題を修正 [＃13117](https://github.com/pingcap/tidb/pull/13117)
     -   `select max(_tidb_rowid) from t`シナリオを最適化してテーブル全体のスキャンを回避する[＃13095](https://github.com/pingcap/tidb/pull/13095)
     -   クエリステートメントに変数代入式が含まれている場合にクエリ結果が正しくない問題を修正しました[＃13231](https://github.com/pingcap/tidb/pull/13231)

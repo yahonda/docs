@@ -51,7 +51,7 @@ Quick access: [クイックスタート](https://docs.pingcap.com/tidb/v6.1/quic
 -   TiKV
 
     -   リージョン[#13553](https://github.com/tikv/tikv/issues/13553) @ [SpadeA-Tang](https://github.com/SpadeA-Tang)のバッチスナップショットによってスナップショットデータが不完全になる可能性がある問題を修正しました
-    -   フロー制御が有効で、 `level0_slowdown_trigger`明示的にに設定されている場合に QPS が低下する問題を修正しました [＃11424](https://github.com/tikv/tikv/issues/11424) @ [Connor1996](https://github.com/Connor1996)
+    -   フロー制御が有効で、 `level0_slowdown_trigger`明示的に設定されている場合に QPS が低下する問題を修正しました [＃11424](https://github.com/tikv/tikv/issues/11424) @ [Connor1996](https://github.com/Connor1996)
     -   TiKV が Web ID プロバイダーからエラーを取得し、デフォルトのプロバイダーにフェイルバックしたときに、権限拒否エラーが発生する問題を修正しました。 [＃13122](https://github.com/tikv/tikv/issues/13122) @ [3pointer](https://github.com/3pointer)
     -   TiKVインスタンスが隔離されたネットワーク環境にある場合、TiKVサービスが数分間利用できなくなる問題を修正[＃12966](https://github.com/tikv/tikv/issues/12966) @ [cosven](https://github.com/cosven)
 

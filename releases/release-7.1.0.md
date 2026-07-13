@@ -451,7 +451,7 @@ TiDB 7.1.0 は長期サポートリリース (LTS) です。
     -   TiDBDumpling
 
         -   `UNSIGNED INTEGER`型の主キーがチャンクの分割に使用できない問題を修正しました [＃42620](https://github.com/pingcap/tidb/issues/42620) @ [lichunzhu](https://github.com/lichunzhu)
-        -   `--output-file-template`誤ってに設定されている場合に TiDB Dumpling がpanic可能性がある問題を修正しました [＃42391](https://github.com/pingcap/tidb/issues/42391) @ [lichunzhu](https://github.com/lichunzhu)
+        -   `--output-file-template`誤って設定されている場合に TiDB Dumpling がpanic可能性がある問題を修正しました [＃42391](https://github.com/pingcap/tidb/issues/42391) @ [lichunzhu](https://github.com/lichunzhu)
 
     -   TiDB Binlog
 
