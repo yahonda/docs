@@ -19,7 +19,7 @@ TiDB Ansible バージョン: 2.1.9
 -   DistSQL でメモリ使用量を追跡および制御する [＃10197](https://github.com/pingcap/tidb/pull/10197)
 -   照合順序を`utf8mb4_0900_ai_ci` として指定するサポート [＃10201](https://github.com/pingcap/tidb/pull/10201)
 -   主キーが符号なし型の場合の`MAX`関数の誤った結果の問題を修正しました [＃10209](https://github.com/pingcap/tidb/pull/10209)
--   非厳密SQLモードでNOT NULL列にNULL値が挿入される問題を修正 [＃10254](https://github.com/pingcap/tidb/pull/10254)
+-   非厳密モードでNOT NULL列にNULL値が挿入される問題を修正 [＃10254](https://github.com/pingcap/tidb/pull/10254)
 -   `DISTINCT` に複数の列が存在する場合の`COUNT`関数の誤った結果の問題を修正しました [＃10270](https://github.com/pingcap/tidb/pull/10270)
 -   `LOAD DATA`不規則なCSVファイルを解析する際に発生するpanic問題を修正[＃10269](https://github.com/pingcap/tidb/pull/10269)
 -   `Index Lookup Join` で外部結合キーと内部結合キーの型が一致しない場合は、オーバーフローエラーを無視します。 [＃10244](https://github.com/pingcap/tidb/pull/10244)
