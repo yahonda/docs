@@ -133,9 +133,9 @@ TiDB バージョン: 6.5.4
     -   etcd がすでに起動しているがクライアントがまだ接続していない場合、クライアントを呼び出すと PD がpanicになる可能性がある問題を修正しました。 [＃6860](https://github.com/tikv/pd/issues/6860) @ [HuSharp](https://github.com/HuSharp)
     -   リーダーが長時間退出できない問題を修正[＃6918](https://github.com/tikv/pd/issues/6918) @ [bufferflies](https://github.com/bufferflies)
     -   配置ルールが`LOCATION_LABELS`使用する場合、SQL とルールチェッカーがと互換性がない問題を修正しました [＃38605](https://github.com/pingcap/tidb/issues/38605) @ [nolouch](https://github.com/nolouch)
-    -   PD が予期せず複数の学習者をリージョンに追加する可能性がある問題を修正しました。 [＃5786](https://github.com/tikv/pd/issues/5786) @ [HunDunDM](https://github.com/HunDunDM)
+    -   PD が予期せず複数のラーナーをリージョンに追加する可能性がある問題を修正しました。 [＃5786](https://github.com/tikv/pd/issues/5786) @ [HunDunDM](https://github.com/HunDunDM)
     -   ルールチェッカーがピアを選択した場合に、不健全なピアを削除できない問題を修正しました [＃6559](https://github.com/tikv/pd/issues/6559) @ [nolouch](https://github.com/nolouch)
-    -   `unsafe recovery`で不合格になった学習者のピアが`auto-detect`モードで無視される問題を修正 [＃6690](https://github.com/tikv/pd/issues/6690) @ [v01dstar](https://github.com/v01dstar)
+    -   `unsafe recovery`で不合格になったラーナーのピアが`auto-detect`モードで無視される問題を修正 [＃6690](https://github.com/tikv/pd/issues/6690) @ [v01dstar](https://github.com/v01dstar)
 
 -   TiFlash
 

@@ -134,7 +134,7 @@ TiDB バージョン: 6.5.1
 -   PD
 
     -   特定の条件下で実行`replace-down-peer`が遅くなる問題を修正[＃5788](https://github.com/tikv/pd/issues/5788) @ [HunDunDM](https://github.com/HunDunDM)
-    -   PD が予期せず複数の学習者をリージョンに追加する可能性がある問題を修正しました。 [＃5786](https://github.com/tikv/pd/issues/5786) @ [HunDunDM](https://github.com/HunDunDM)
+    -   PD が予期せず複数のラーナーをリージョンに追加する可能性がある問題を修正しました。 [＃5786](https://github.com/tikv/pd/issues/5786) @ [HunDunDM](https://github.com/HunDunDM)
     -   リージョンスキャッタタスクが予期せず冗長レプリカを生成する問題を修正[＃5909](https://github.com/tikv/pd/issues/5909) @ [HunDunDM](https://github.com/HunDunDM)
     -   `ReportMinResolvedTS`の呼び出しがで頻繁に発生する PD OOM 問題を修正しました [＃5965](https://github.com/tikv/pd/issues/5965) @ [HunDunDM](https://github.com/HunDunDM)
     -   リージョン散布により、リーダーの分布が不均一になる可能性がある問題を修正しました。 [＃6017](https://github.com/tikv/pd/issues/6017) @ [HunDunDM](https://github.com/HunDunDM)

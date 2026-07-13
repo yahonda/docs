@@ -50,7 +50,7 @@ TiDB バージョン: 6.1.4
 
 -   PD
 
-    -   PD が予期せず複数の学習者をリージョンに追加する可能性がある問題を修正しました。 [＃5786](https://github.com/tikv/pd/issues/5786) @ [HunDunDM](https://github.com/HunDunDM)
+    -   PD が予期せず複数のラーナーをリージョンに追加する可能性がある問題を修正しました。 [＃5786](https://github.com/tikv/pd/issues/5786) @ [HunDunDM](https://github.com/HunDunDM)
 
 <!---->
 

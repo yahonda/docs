@@ -74,7 +74,7 @@ TiDB バージョン: 6.5.2
 
 -   PD
 
-    -   PD が予期せず複数の学習者をリージョンに追加する可能性がある問題を修正しました。 [＃5786](https://github.com/tikv/pd/issues/5786) @ [HunDunDM](https://github.com/HunDunDM)
+    -   PD が予期せず複数のラーナーをリージョンに追加する可能性がある問題を修正しました。 [＃5786](https://github.com/tikv/pd/issues/5786) @ [HunDunDM](https://github.com/HunDunDM)
     -   配置ルールの切り替えにより、リーダーの分布が不均等になる可能性がある問題を修正しました。 [＃6195](https://github.com/tikv/pd/issues/6195) @ [bufferflies](https://github.com/bufferflies)
 
 -   TiFlash
