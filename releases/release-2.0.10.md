@@ -21,7 +21,7 @@ summary: TiDB 2.0.10およびTiDB Ansible 2.0.10は、2018年12月18日にリリ
 -   `PREPARE FROM @var_name` の問題を修正 [＃8488](https://github.com/pingcap/tidb/pull/8488)
 -   一部のケースで統計情報をダンプするときにpanic問題を修正[＃8464](https://github.com/pingcap/tidb/pull/8464)
 -   いくつかのケースにおけるポイントクエリの統計推定の問題を修正[＃8493](https://github.com/pingcap/tidb/pull/8493)
--   返されるデフォルト値`enum`が文字列場合にpanic問題を修正 [＃8476](https://github.com/pingcap/tidb/pull/8476)
+-   返されるデフォルト値`enum`が文字列の場合にpanic問題を修正 [＃8476](https://github.com/pingcap/tidb/pull/8476)
 -   ワイドテーブルのシナリオでメモリ消費量が多すぎる問題を修正 [＃8467](https://github.com/pingcap/tidb/pull/8467)
 -   パーサーがmod opcode を誤ってフォーマットした場合に発生する問題を修正しました [＃8431](https://github.com/pingcap/tidb/pull/8431)
 -   一部のケースで外部キー制約を追加することで発生するpanic問題を修正[＃8421](https://github.com/pingcap/tidb/pull/8421) 、 [＃8410](https://github.com/pingcap/tidb/pull/8410)
