@@ -22,7 +22,7 @@ TiDB バージョン: 8.1.2
 
 -   TiDB
 
-    -   リクエストユニット（RU）設定に関するメトリックをに追加します [＃8444](https://github.com/tikv/pd/issues/8444) @ [nolouch](https://github.com/nolouch)
+    -   リクエストユニット（RU）設定に関するメトリックを追加します [＃8444](https://github.com/tikv/pd/issues/8444) @ [nolouch](https://github.com/nolouch)
 
 -   TiKV
 
