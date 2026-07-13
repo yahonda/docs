@@ -198,7 +198,7 @@ TiDB 8.1.0 は長期サポートリリース (LTS) です。
     -   列に無効なデフォルト値が指定されたときに表示される誤ったエラー メッセージを修正しました。 [＃51592](https://github.com/pingcap/tidb/issues/51592) @ [danqixu](https://github.com/danqixu)
     -   取り込みモードでインデックスを追加すると、一部のコーナーケースでデータインデックスの不整合が発生する可能性がある問題を修正[＃51954](https://github.com/pingcap/tidb/issues/51954) @ [lance6716](https://github.com/lance6716)
     -   外部キーを持つテーブルを復元するときに DDL 操作が停止する問題を修正しました [＃51838](https://github.com/pingcap/tidb/issues/51838) @ [YangKeao](https://github.com/YangKeao)
-    -   TiDBネットワークがで分離されているときにインデックスの追加が失敗する問題を修正 [＃51846](https://github.com/pingcap/tidb/issues/51846) @ [ywqzzy](https://github.com/ywqzzy)
+    -   TiDBネットワークが分離されているときにインデックスの追加が失敗する問題を修正 [＃51846](https://github.com/pingcap/tidb/issues/51846) @ [ywqzzy](https://github.com/ywqzzy)
     -   インデックス名を変更した後に同じ名前のインデックスを追加するとエラーが発生する問題を修正[＃51431](https://github.com/pingcap/tidb/issues/51431) @ [lance6716](https://github.com/lance6716)
     -   インデックス追加中にクラスターのアップグレードによって発生するデータ インデックスの不整合の問題を修正しました。 [＃52411](https://github.com/pingcap/tidb/issues/52411) @ [tangenta](https://github.com/tangenta)
     -   分散実行フレームワーク (DXF) を有効にした後に、大きなテーブルにインデックスを追加できない問題を修正しました。 [＃52640](https://github.com/pingcap/tidb/issues/52640) @ [tangenta](https://github.com/tangenta)
@@ -274,7 +274,7 @@ TiDB 8.1.0 は長期サポートリリース (LTS) です。
         -   PDディスクI/Oの高レイテンシーによりデータレプリケーションで深刻なレイテンシーが発生する問題を修正 [＃9054](https://github.com/pingcap/tiflow/issues/9054) @ [asddongmen](https://github.com/asddongmen)
         -   `TIMEZONE`種類のデフォルト値が正しいタイムゾーンに従って設定されない問題を修正 [＃10931](https://github.com/pingcap/tiflow/issues/10931) @ [3AceShowHand](https://github.com/3AceShowHand)
         -   `DROP PRIMARY KEY`と`DROP UNIQUE KEY`ステートメントが正しく複製されない問題を修正[＃10890](https://github.com/pingcap/tiflow/issues/10890) @ [asddongmen](https://github.com/asddongmen)
-        -   TiCDC が上流に書き込まれた後に下流の`Exchange Partition ... With Validation` DDL の実行に失敗し、変更フィードがで停止する問題を修正しました。 [＃10859](https://github.com/pingcap/tiflow/issues/10859) @ [hongyunyan](https://github.com/hongyunyan)
+        -   TiCDC が上流に書き込まれた後に下流の`Exchange Partition ... With Validation` DDL の実行に失敗し、変更フィードが停止する問題を修正しました。 [＃10859](https://github.com/pingcap/tiflow/issues/10859) @ [hongyunyan](https://github.com/hongyunyan)
 
     -   TiDB Lightning
 

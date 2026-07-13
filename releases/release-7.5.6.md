@@ -96,7 +96,7 @@ TiDB バージョン: 7.5.6
     -   `flow-round-by-digit`構成項目の値が再起動後に上書きされる可能性がある問題を修正[＃8980](https://github.com/tikv/pd/issues/8980) @ [nolouch](https://github.com/nolouch)
     -   PDネットワークの不安定さにより、データのインポートやインデックスシナリオの追加操作が失敗する可能性がある問題を修正しました。 [＃8962](https://github.com/tikv/pd/issues/8962) @ [okJiang](https://github.com/okJiang)
     -   `tidb_enable_tso_follower_proxy`システム変数が有効になっているときに PD がpanic可能性がある問題を修正[＃8950](https://github.com/tikv/pd/issues/8950) @ [okJiang](https://github.com/okJiang)
-    -   `tidb_enable_tso_follower_proxy`システム変数がで有効にならない可能性がある問題を修正しました [＃8947](https://github.com/tikv/pd/issues/8947) @ [JmPotato](https://github.com/JmPotato)
+    -   `tidb_enable_tso_follower_proxy`システム変数が有効にならない可能性がある問題を修正しました [＃8947](https://github.com/tikv/pd/issues/8947) @ [JmPotato](https://github.com/JmPotato)
     -   TSO を割り当てるときにメモリリークが発生する可能性がある問題を修正しました [＃9004](https://github.com/tikv/pd/issues/9004) @ [rleungx](https://github.com/rleungx)
     -   PDLeader対@[rleungx](https://github.com/rleungx)切り替え時にリージョン同期が間に合わない可能性がある問題を修正しました [＃9017](https://github.com/tikv/pd/issues/9017)
     -   PDノードがLeaderでない場合でもTSOを生成する可能性がある問題を修正しました [＃9051](https://github.com/tikv/pd/issues/9051) @ [rleungx](https://github.com/rleungx)
@@ -123,12 +123,12 @@ TiDB バージョン: 7.5.6
 
     -   TiCDC
 
-        -   多数の小さなテーブルがあるシナリオで TiCDC を有効にすると、TiKV がで再起動する可能性がある問題を修正しました。 [＃18142](https://github.com/tikv/tikv/issues/18142) @ [hicqu](https://github.com/hicqu)
+        -   多数の小さなテーブルがあるシナリオで TiCDC を有効にすると、TiKV が再起動する可能性がある問題を修正しました。 [＃18142](https://github.com/tikv/tikv/issues/18142) @ [hicqu](https://github.com/hicqu)
         -   アップストリームで新しく追加された列のデフォルト値を`NOT NULL`から`NULL`に変更すると、ダウンストリームのその列のデフォルト値が正しくなくなる問題を修正しました[＃12037](https://github.com/pingcap/tiflow/issues/12037) @ [wk989898](https://github.com/wk989898)
         -   Sarama クライアントによって再送信された順序が乱れたメッセージによって Kafka メッセージの順序が正しくなくなる問題を修正[＃11935](https://github.com/pingcap/tiflow/issues/11935) @ [3AceShowHand](https://github.com/3AceShowHand)
         -   TiCDC が`RENAME TABLE`操作中にフィルタリングに誤ったテーブル名を使用する問題を修正しました [＃11946](https://github.com/pingcap/tiflow/issues/11946) @ [wk989898](https://github.com/wk989898)
         -   チェンジフィードが削除された後に goroutines リークが発生する問題を修正[＃11954](https://github.com/pingcap/tiflow/issues/11954) @ [hicqu](https://github.com/hicqu)
-        -   `changefeed pause`コマンドで`--overwrite-checkpoint-ts`パラメータを使用すると、変更フィードがで停止する可能性がある問題を修正しました。 [＃12055](https://github.com/pingcap/tiflow/issues/12055) @ [hongyunyan](https://github.com/hongyunyan)
+        -   `changefeed pause`コマンドで`--overwrite-checkpoint-ts`パラメータを使用すると、変更フィードが停止する可能性がある問題を修正しました。 [＃12055](https://github.com/pingcap/tiflow/issues/12055) @ [hongyunyan](https://github.com/hongyunyan)
         -   Avroプロトコル経由で`default NULL`文を複製するときにTiCDCがエラーを報告する問題を修正 [＃11994](https://github.com/pingcap/tiflow/issues/11994) @ [wk989898](https://github.com/wk989898)
         -   PDスケールイン後にTiCDCがPDに正しく接続できない問題を修正 [＃12004](https://github.com/pingcap/tiflow/issues/12004) @ [lidezhu](https://github.com/lidezhu)
 

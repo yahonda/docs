@@ -86,7 +86,7 @@ TiDB バージョン: 7.5.1
 
 -   TiDB
 
-    -   システム変数`tidb_service_scope`設定がで@[ywqzzy](https://github.com/ywqzzy)に反映されない問題を修正 [＃49245](https://github.com/pingcap/tidb/issues/49245)
+    -   システム変数`tidb_service_scope`設定が@[ywqzzy](https://github.com/ywqzzy)に反映されない問題を修正 [＃49245](https://github.com/pingcap/tidb/issues/49245)
     -   圧縮が有効になっている場合、通信プロトコルが16 MB以上のパケットを処理できない問題を修正[＃47157](https://github.com/pingcap/tidb/issues/47157) [＃47161](https://github.com/pingcap/tidb/issues/47161) @ [dveeden](https://github.com/dveeden)
     -   `approx_percentile`関数が TiDBpanicを引き起こす可能性がある問題を修正しました [＃40463](https://github.com/pingcap/tidb/issues/40463) @ [xzhangxian1008](https://github.com/xzhangxian1008)
     -   文字列関数の引数が`NULL`定数の場合に TiDB が暗黙的に`from_binary`関数を挿入し、一部の式がTiFlash にプッシュダウンできない問題を修正しました。 [＃49526](https://github.com/pingcap/tidb/issues/49526) @ [YangKeao](https://github.com/YangKeao)
@@ -110,7 +110,7 @@ TiDB バージョン: 7.5.1
     -   `tidb_server_memory_limit` による長期メモリ圧迫により TiDB の CPU 使用率が上昇する問題を修正 [＃48741](https://github.com/pingcap/tidb/issues/48741) @ [XuHuaiyu](https://github.com/XuHuaiyu)
     -   依存関係のある 2 つの DDL タスクの完了時間がと誤って順序付けられる問題を修正しました。 [＃49498](https://github.com/pingcap/tidb/issues/49498) @ [tangenta](https://github.com/tangenta)
     -   無効なオプティマイザヒントによって有効なヒントが無効になる可能性がある問題を修正[＃49308](https://github.com/pingcap/tidb/issues/49308) @ [hawkingrei](https://github.com/hawkingrei)
-    -   `CHECK`制約の DDL 文がでスタックする問題を修正しました [＃47632](https://github.com/pingcap/tidb/issues/47632) @ [jiyfhust](https://github.com/jiyfhust)
+    -   `CHECK`制約の DDL 文がスタックする問題を修正しました [＃47632](https://github.com/pingcap/tidb/issues/47632) @ [jiyfhust](https://github.com/jiyfhust)
     -   `CHECK`制約の`ENFORCED`オプションの動作がMySQL 8.0 と一致しない問題を修正 [＃47631](https://github.com/pingcap/tidb/issues/47631) @ [jiyfhust](https://github.com/jiyfhust) [＃47567](https://github.com/pingcap/tidb/issues/47567)
     -   CTEクエリが再試行プロセス中にエラー`type assertion for CTEStorageMap failed`を報告する可能性がある問題を修正しました [＃46522](https://github.com/pingcap/tidb/issues/46522) @ [tiancaiamao](https://github.com/tiancaiamao)
     -   `tidb_multi_statement_mode`モードが有効になっている場合、インデックス検索を使用する`DELETE`および`UPDATE`ステートメントでエラーが報告される可能性がある問題を修正しました[＃50012](https://github.com/pingcap/tidb/issues/50012) @ [tangenta](https://github.com/tangenta)
@@ -140,7 +140,7 @@ TiDB バージョン: 7.5.1
     -   共通テーブル式 (CTE) を含むクエリがメモリ制限を超えたときに予期せず停止する問題を修正[＃49096](https://github.com/pingcap/tidb/issues/49096) @ [AilinKid](https://github.com/AilinKid)
     -   DDL所有者がネットワークから分離されているの後に`ADD INDEX`実行すると、TiDB分散実行フレームワーク（DXF）でデータが不整合になる問題を修正しました [＃49773](https://github.com/pingcap/tidb/issues/49773) @ [tangenta](https://github.com/tangenta)
     -   `AUTO_ID_CACHE=1` のAUTO_INCREMENT列を使用すると同時競合によりAUTO_INCREMENT ID 割り当てでエラーが報告される問題を修正しました。 [＃50519](https://github.com/pingcap/tidb/issues/50519) @ [tiancaiamao](https://github.com/tiancaiamao)
-    -   クエリに Apply 演算子が含まれており、 `fatal error: concurrent map writes`エラーがで発生すると TiDB がpanicになる可能性がある問題を修正しました。 [＃50347](https://github.com/pingcap/tidb/issues/50347) @ [SeaRise](https://github.com/SeaRise)
+    -   クエリに Apply 演算子が含まれており、 `fatal error: concurrent map writes`エラーが発生すると TiDB がpanicになる可能性がある問題を修正しました。 [＃50347](https://github.com/pingcap/tidb/issues/50347) @ [SeaRise](https://github.com/SeaRise)
     -   DDL `jobID` 0 に復元されたときに発生する TiDB ノードpanicの問題を修正しました [＃46296](https://github.com/pingcap/tidb/issues/46296) @ [jiyfhust](https://github.com/jiyfhust)
     -   `STREAM_AGG()` CI を誤って処理したためにクエリ結果が正しくない問題を修正しました [＃49902](https://github.com/pingcap/tidb/issues/49902) @ [wshwsh12](https://github.com/wshwsh12)
     -   多数のテーブルまたはパーティションを処理するときに TiDB ノードが OOM エラーに遭遇する可能性がある問題を軽減します。 [＃50077](https://github.com/pingcap/tidb/issues/50077) @ [zimulala](https://github.com/zimulala)
@@ -182,7 +182,7 @@ TiDB バージョン: 7.5.1
     -   PDリーダーが転送され、新しいリーダーとPDクライアントの間にネットワークパーティションがある場合、PDクライアントがリーダーの情報を更新できない問題を修正しました。 [＃7416](https://github.com/tikv/pd/issues/7416) @ [CabinfeverB](https://github.com/CabinfeverB)
     -   Gin Web Framework のバージョンを v1.8.1 から v1.9.1 にアップグレードして、いくつかのセキュリティ問題を修正しました[＃7438](https://github.com/tikv/pd/issues/7438) @ [niubell](https://github.com/niubell)
     -   レプリカ数が要件を満たしていない場合に孤立ピアが削除される問題を修正しました [＃7584](https://github.com/tikv/pd/issues/7584) @ [bufferflies](https://github.com/bufferflies)
-    -   `pd-ctl`を使用してリーダーのないリージョンを照会すると、PD がでpanicになる可能性がある問題を修正しました。 [＃7630](https://github.com/tikv/pd/issues/7630) @ [rleungx](https://github.com/rleungx)
+    -   `pd-ctl`を使用してリーダーのないリージョンを照会すると、PD がpanicになる可能性がある問題を修正しました。 [＃7630](https://github.com/tikv/pd/issues/7630) @ [rleungx](https://github.com/rleungx)
 
 -   TiFlash
 

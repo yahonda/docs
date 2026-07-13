@@ -387,7 +387,7 @@ TiDB バージョン: 7.4.0
     -   `sync_recovery`から`sync` に切り替えた後に QPS が 0 に低下する問題を修正しました [＃15366](https://github.com/tikv/tikv/issues/15366) @ [nolouch](https://github.com/nolouch)
     -   オンラインアンセーフリカバリがタイムアウトで中止されない問題を修正 [＃15346](https://github.com/tikv/tikv/issues/15346) @ [Connor1996](https://github.com/Connor1996)
     -   CpuRecord によって発生する潜在的なメモリリークの問題を修正しました [＃15304](https://github.com/tikv/tikv/issues/15304) @ [overvenus](https://github.com/overvenus)
-    -   バックアップクラスタがダウンし、プライマリクラスタがでクエリされたときに`"Error 9002: TiKV server timeout"`発生する問題を修正しました [＃12914](https://github.com/tikv/tikv/issues/12914) @ [Connor1996](https://github.com/Connor1996)
+    -   バックアップクラスタがダウンし、プライマリクラスタがクエリされたときに`"Error 9002: TiKV server timeout"`発生する問題を修正しました [＃12914](https://github.com/tikv/tikv/issues/12914) @ [Connor1996](https://github.com/Connor1996)
     -   プライマリクラスタがに回復した後に TiKV が再起動するとバックアップ TiKV が停止する問題を修正しました [＃12320](https://github.com/tikv/tikv/issues/12320) @ [disksing](https://github.com/disksing)
 
 -   PD
@@ -395,7 +395,7 @@ TiDB バージョン: 7.4.0
     -   フラッシュバック中にリージョン情報が更新されず保存されない問題を修正 [＃6912](https://github.com/tikv/pd/issues/6912) @ [overvenus](https://github.com/overvenus)
     -   ストア構成の同期が遅いために PD リーダーの切り替えが遅くなる問題を修正しました [＃6918](https://github.com/tikv/pd/issues/6918) @ [bufferflies](https://github.com/bufferflies)
     -   Scatter Peers でグループが考慮されない問題を修正しました [＃6962](https://github.com/tikv/pd/issues/6962) @ [bufferflies](https://github.com/bufferflies)
-    -   RU消費量が0未満の場合にPDがでクラッシュする問題を修正 [＃6973](https://github.com/tikv/pd/issues/6973) @ [CabinfeverB](https://github.com/CabinfeverB)
+    -   RU消費量が0未満の場合にPDがクラッシュする問題を修正 [＃6973](https://github.com/tikv/pd/issues/6973) @ [CabinfeverB](https://github.com/CabinfeverB)
     -   変更された分離レベルがデフォルトの配置ルールに同期されない問題を修正しました [＃7121](https://github.com/tikv/pd/issues/7121) @ [rleungx](https://github.com/rleungx)
     -   クラスタが大きい場合、クライアントが定期的に更新される`min-resolved-ts` PD OOMを引き起こす可能性がある問題を修正しました[＃46664](https://github.com/pingcap/tidb/issues/46664) @ [HuSharp](https://github.com/HuSharp)
 
@@ -403,7 +403,7 @@ TiDB バージョン: 7.4.0
 
     -   Grafana で`max_snapshot_lifetime`メトリックが正しく表示されない問題を修正 [＃7713](https://github.com/pingcap/tiflash/issues/7713) @ [JaySon-Huang](https://github.com/JaySon-Huang)
     -   最大継続時間に関する一部の指標が正しくない問題を修正[＃8076](https://github.com/pingcap/tiflash/issues/8076) @ [CalvinNeo](https://github.com/CalvinNeo)
-    -   TiDBがMPPタスクがで失敗したと誤って報告する問題を修正しました [＃7177](https://github.com/pingcap/tiflash/issues/7177) @ [yibin87](https://github.com/yibin87)
+    -   TiDBがMPPタスクが失敗したと誤って報告する問題を修正しました [＃7177](https://github.com/pingcap/tiflash/issues/7177) @ [yibin87](https://github.com/yibin87)
 
 -   ツール
 

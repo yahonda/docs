@@ -63,7 +63,7 @@ TiDBバージョン: 6.5.12
     -   クエリ`INFORMATION_SCHEMA.columns`のパフォーマンスが[ランス6716](https://github.com/lance6716)で低下する問題を修正 [＃58184](https://github.com/pingcap/tidb/issues/58184)
     -   `INSERT ... ON DUPLICATE KEY`文が`mysql_insert_id` と互換性がない問題を修正 [＃55965](https://github.com/pingcap/tidb/issues/55965) @ [tiancaiamao](https://github.com/tiancaiamao)
     -   クエリ条件`column IS NULL` で一意インデックスにアクセスするときに、オプティマイザが行数を誤って 1 と推定する問題を修正しました。 [＃56116](https://github.com/pingcap/tidb/issues/56116) @ [hawkingrei](https://github.com/hawkingrei)
-    -   `IndexLookUp`演算子のメモリの一部がで追跡されない問題を修正 [＃56440](https://github.com/pingcap/tidb/issues/56440) @ [wshwsh12](https://github.com/wshwsh12)
+    -   `IndexLookUp`演算子のメモリの一部が追跡されない問題を修正 [＃56440](https://github.com/pingcap/tidb/issues/56440) @ [wshwsh12](https://github.com/wshwsh12)
     -   TiDBの内部コルーチンで発生する可能性のあるデータ競合問題を修正しました [＃56053](https://github.com/pingcap/tidb/issues/56053) @ [fishiu](https://github.com/fishiu) [＃57798](https://github.com/pingcap/tidb/issues/57798) @ [tiancaiamao](https://github.com/tiancaiamao)
     -   クエリに利用可能なインデックスマージ実行プランがある場合に`read_from_storage`ヒントが有効にならない可能性がある問題を修正しました [＃56217](https://github.com/pingcap/tidb/issues/56217) @ [AilinKid](https://github.com/AilinKid)
     -   エイリアスを持つマルチテーブル`DELETE`ステートメントに対して実行プラン バインディングを作成できない問題を修正しました。 [＃56726](https://github.com/pingcap/tidb/issues/56726) @ [hawkingrei](https://github.com/hawkingrei)
@@ -109,7 +109,7 @@ TiDBバージョン: 6.5.12
 -   PD
 
     -   TSO を割り当てるときにメモリリークが発生する可能性がある問題を修正しました [＃9004](https://github.com/tikv/pd/issues/9004) @ [rleungx](https://github.com/rleungx)
-    -   `tidb_enable_tso_follower_proxy`システム変数がで有効にならない可能性がある問題を修正しました [＃8947](https://github.com/tikv/pd/issues/8947) @ [JmPotato](https://github.com/JmPotato)
+    -   `tidb_enable_tso_follower_proxy`システム変数が有効にならない可能性がある問題を修正しました [＃8947](https://github.com/tikv/pd/issues/8947) @ [JmPotato](https://github.com/JmPotato)
     -   PD がpanicを起こす可能性のある潜在的な問題を修正[＃8915](https://github.com/tikv/pd/issues/8915) @ [bufferflies](https://github.com/bufferflies)
     -   長時間実行クラスタでメモリリークが発生する可能性がある問題を修正 [＃9047](https://github.com/tikv/pd/issues/9047) @ [bufferflies](https://github.com/bufferflies)
     -   PDノードがLeaderでない場合でもTSOを生成する可能性がある問題を修正しました [＃9051](https://github.com/tikv/pd/issues/9051) @ [rleungx](https://github.com/rleungx)
@@ -156,7 +156,7 @@ TiDBバージョン: 6.5.12
         -   PDスケールイン後にTiCDCがPDに正しく接続できない問題を修正 [＃12004](https://github.com/pingcap/tiflow/issues/12004) @ [lidezhu](https://github.com/lidezhu)
         -   チェンジフィードが停止または削除された後に初期スキャンがキャンセルされない問題を修正[＃11638](https://github.com/pingcap/tiflow/issues/11638) @ [3AceShowHand](https://github.com/3AceShowHand)
         -   アップストリームで新しく追加された列のデフォルト値を`NOT NULL`から`NULL`に変更すると、ダウンストリームのその列のデフォルト値が正しくなくなる問題を修正しました[＃12037](https://github.com/pingcap/tiflow/issues/12037) @ [wk989898](https://github.com/wk989898)
-        -   `changefeed pause`コマンドで`--overwrite-checkpoint-ts`パラメータを使用すると、変更フィードがで停止する可能性がある問題を修正しました。 [＃12055](https://github.com/pingcap/tiflow/issues/12055) @ [hongyunyan](https://github.com/hongyunyan)
+        -   `changefeed pause`コマンドで`--overwrite-checkpoint-ts`パラメータを使用すると、変更フィードが停止する可能性がある問題を修正しました。 [＃12055](https://github.com/pingcap/tiflow/issues/12055) @ [hongyunyan](https://github.com/hongyunyan)
         -   `CREATE TABLE IF NOT EXISTS`または`CREATE DATABASE IF NOT EXISTS`ステートメントを複製するときに TiCDC がpanic可能性がある問題を修正しました [＃11839](https://github.com/pingcap/tiflow/issues/11839) @ [CharlesCheung96](https://github.com/CharlesCheung96)
         -   有効なインデックスのないテーブルで`TRUNCATE TABLE` DDL を複製するときに TiCDC がエラーを報告する可能性がある問題を修正しました。 [＃11765](https://github.com/pingcap/tiflow/issues/11765) @ [asddongmen](https://github.com/asddongmen)
         -   TiDB DDL 所有者の変更中に DDL タスクのスキーマ バージョンが非増分になったときに、TiCDC が誤って DDL タスクを破棄する問題を修正[＃11714](https://github.com/pingcap/tiflow/issues/11714) @ [wlwilliamx](https://github.com/wlwilliamx)

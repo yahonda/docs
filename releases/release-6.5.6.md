@@ -141,7 +141,7 @@ TiDB バージョン: 6.5.6
     -   Backup & Restore (BR)
 
         -   大規模なワイドテーブルをバックアップするときに、一部のシナリオでログバックアップが停止する可能性がある問題を修正しました。 [＃15714](https://github.com/tikv/tikv/issues/15714) @ [YuJuncen](https://github.com/YuJuncen)
-        -   頻繁なフラッシュによりログバックアップがで停止する問題を修正しました [＃15602](https://github.com/tikv/tikv/issues/15602) @ [3pointer](https://github.com/3pointer)
+        -   頻繁なフラッシュによりログバックアップが停止する問題を修正しました [＃15602](https://github.com/tikv/tikv/issues/15602) @ [3pointer](https://github.com/3pointer)
         -   EC2 メタデータ接続のリセット後の再試行により、バックアップとリストアのパフォーマンスが低下する問題を修正[＃47650](https://github.com/pingcap/tidb/issues/47650) @ [Leavrth](https://github.com/Leavrth)
         -   1分以内にPITRを複数回実行するとデータ損失が発生する可能性がある問題を修正[＃15483](https://github.com/tikv/tikv/issues/15483) @ [YuJuncen](https://github.com/YuJuncen)
         -   BR SQL コマンドと CLI のデフォルト値が異なるため、OOM の問題が発生する可能性がある問題を修正しました[＃48000](https://github.com/pingcap/tidb/issues/48000) @ [YuJuncen](https://github.com/YuJuncen)
