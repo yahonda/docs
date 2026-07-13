@@ -61,7 +61,7 @@ TiDB Ansible バージョン: 2.1.19
     -   テーブルが作成され、テーブルに`COLLATE` が含まれている場合、列のシステムのデフォルトの文字セットの代わりにテーブルの`COLLATE`使用します。 [＃13190](https://github.com/pingcap/tidb/pull/13190)
     -   テーブルを作成するときにインデックス名の長さを制限する [＃13311](https://github.com/pingcap/tidb/pull/13311)
     -   テーブル名を変更するときにテーブル名の長さがチェックされない問題を修正[＃13345](https://github.com/pingcap/tidb/pull/13345)
-    -   `BIT`列目列目の幅の範囲を確認する [＃13511](https://github.com/pingcap/tidb/pull/13511)
+    -   `BIT`列の幅の範囲を確認する [＃13511](https://github.com/pingcap/tidb/pull/13511)
     -   `change/modify column`から出力されるエラー情報をより分かりやすくする[＃13798](https://github.com/pingcap/tidb/pull/13798)
     -   下流のDrainerによってまだ処理されていない`drop column`操作を実行するときに、下流が影響を受ける列のない DML 操作を受け取る可能性がある問題を修正しました。 [＃13974](https://github.com/pingcap/tidb/pull/13974)
 
