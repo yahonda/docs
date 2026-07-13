@@ -57,7 +57,7 @@ TiDB Ansible バージョン: 3.0.1
 -   ファイルハンドルの統計が不正確であるためにファイルハンドルが利用できないという問題を回避するために、開いているファイルハンドルの数をカウントするときに Titan の開いているファイルハンドルの数を追加します[＃5026](https://github.com/tikv/tikv/pull/5026)
 -   特定のCF でTitanエンジンを有効にするかどうかを決定するには`blob_run_mode`設定します。 [＃4991](https://github.com/tikv/tikv/pull/4991)
 -   読み取り操作で悲観的トランザクションのコミット情報を取得できない問題を修正[＃5067](https://github.com/tikv/tikv/pull/5067)
--   Titanエンジンの実行モードを制御するための`blob-run-mode`構成パラメータを追加します。その値は`normal` 、または`fallback` になります`read-only` [＃4865](https://github.com/tikv/tikv/pull/4865)
+-   Titanエンジンの実行モードを制御するための`blob-run-mode`構成パラメータを追加します。その値は`normal`、`fallback`、または`read-only`になります [＃4865](https://github.com/tikv/tikv/pull/4865)
 -   デッドロック検出のパフォーマンスを向上[＃5089](https://github.com/tikv/tikv/pull/5089)
 
 ## PD {#pd}
