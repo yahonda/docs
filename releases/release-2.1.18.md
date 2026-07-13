@@ -15,7 +15,7 @@ TiDB Ansible バージョン: 2.1.18
 
 -   SQLオプティマイザー
     -   フィードバックで分割すると無効なクエリ範囲が表示される可能性がある問題を修正しました [＃12172](https://github.com/pingcap/tidb/pull/12172)
-    -   ポイント取得プランで権限チェックが正しく行われない問題を修正 [＃12341](https://github.com/pingcap/tidb/pull/12341)
+    -   PointGetプランで権限チェックが正しく行われない問題を修正 [＃12341](https://github.com/pingcap/tidb/pull/12341)
     -   Limit演算子を`IndexLookUpReader`実行ロジックにプッシュすることで、 `select ... limit ... offset …`文の実行パフォーマンスを最適化します。 [＃12380](https://github.com/pingcap/tidb/pull/12380)
     -   `ORDER BY` `GROUP BY` [＃12514](https://github.com/pingcap/tidb/pull/12514) `LIMIT OFFSET`使用をサポート
     -   パーティションテーブル`IndexJoin`が誤った結果を返す問題を修正[＃12713](https://github.com/pingcap/tidb/pull/12713)
