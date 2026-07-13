@@ -20,7 +20,7 @@ TiDB Ansible バージョン: 2.1.19
     -   `UPDATE`ステートメントにサブクエリとストアされた生成列の両方が含まれている場合に結果が正しくない問題を修正しました。3 `UPDATE`ステートメントに異なるデータベースの同じ名前のテーブルが 2 つ含まれている場合にステートメント実行エラーが発生する問題を修正しました[＃13357](https://github.com/pingcap/tidb/pull/13357)
     -   `PhysicalUnionScan`演算子が統計誤って設定するため、クエリ プランが誤って選択される可能性がある問題を修正しました。 [＃14134](https://github.com/pingcap/tidb/pull/14134)
     -   `minAutoAnalyzeRatio`制約を取り除き、自動`ANALYZE`をよりタイムリーにする [＃14013](https://github.com/pingcap/tidb/pull/14013)
-    -   `WHERE`節に一意キー等号条件が含まれている場合に推定行数が`1`より大きくなる問題を修正しました。 [＃13385](https://github.com/pingcap/tidb/pull/13385)
+    -   `WHERE`句に一意キー等号条件が含まれている場合に推定行数が`1`より大きくなる問題を修正しました。 [＃13385](https://github.com/pingcap/tidb/pull/13385)
 -   SQL実行エンジン
     -   `ConvertJSONToInt` で`unit64`中間結果として`int64`使用するときに精度オーバーフローが発生する問題を修正しました。 [＃13036](https://github.com/pingcap/tidb/pull/13036)
     -   クエリに`SLEEP`関数が含まれている場合（たとえば`select 1 from (select sleep(1)) t;)` ）、列の整理によってクエリ内の`sleep(1)`無効になる問題を修正しました[＃13039](https://github.com/pingcap/tidb/pull/13039)
