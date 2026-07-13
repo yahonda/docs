@@ -34,7 +34,7 @@ TiDB バージョン: 4.0.12
 -   TiKV
 
     -   短時間に大量の再接続を防ぐ[＃9879](https://github.com/tikv/tikv/pull/9879)
-    -   多数の墓石のシナリオで書き込み操作とバッチ取得を最適化します[＃9729](https://github.com/tikv/tikv/pull/9729)
+    -   多数のtombstoneのシナリオで書き込み操作とバッチ取得を最適化します[＃9729](https://github.com/tikv/tikv/pull/9729)
     -   リーダー移行の成功率を上げるために、デフォルト値の`leader-transfer-max-log-lag`を`128`に変更します[＃9605](https://github.com/tikv/tikv/pull/9605)
 
 -   PD

@@ -872,7 +872,7 @@ Raftstoreに関連するコンフィグレーション項目。
 >
 > バージョン7.5.7および8.5.4以降、この設定項目は非推奨となり、 [`gc.auto-compaction.tombstone-num-threshold`](#tombstone-num-threshold-new-in-v757-and-v854)に置き換えられました。
 
--   RocksDBの圧縮をトリガーするために必要な墓石の数
+-   RocksDBの圧縮をトリガーするために必要なtombstoneの数
 -   デフォルト値: `10000`
 -   最小値: `0`
 
@@ -882,7 +882,7 @@ Raftstoreに関連するコンフィグレーション項目。
 >
 > バージョン7.5.7および8.5.4以降、この設定項目は非推奨となり、 [`gc.auto-compaction.tombstone-percent-threshold`](#tombstone-percent-threshold-new-in-v757-and-v854)に置き換えられました。
 
--   RocksDBの圧縮をトリガーするために必要な墓石の割合
+-   RocksDBの圧縮をトリガーするために必要なtombstoneの割合
 -   デフォルト値: `30`
 -   最小値: `1`
 -   最大値: `100`
@@ -2371,7 +2371,7 @@ TiKVの自動圧縮の動作を設定します。
 
 ### <code>mvcc-read-weight</code> <span class="version-mark">v8.5.6で追加</span> {#code-mvcc-read-weight-code-span-class-version-mark-new-in-v8-5-6-span}
 
--   リージョンの圧縮優先度スコアを計算する際に、MVCC 読み取りアクティビティに適用される重み乗数。値が大きいほど、墓石密度などの他の圧縮トリガーと比較して、MVCC 読み取り増幅に重みが高くなります。この設定項目は、 [`mvcc-read-aware-enabled`](#mvcc-read-aware-enabled-new-in-v856) `true`に設定されている場合にのみ有効になります。
+-   リージョンの圧縮優先度スコアを計算する際に、MVCC 読み取りアクティビティに適用される重み乗数。値が大きいほど、tombstone密度などの他の圧縮トリガーと比較して、MVCC 読み取り増幅に重みが高くなります。この設定項目は、 [`mvcc-read-aware-enabled`](#mvcc-read-aware-enabled-new-in-v856) `true`に設定されている場合にのみ有効になります。
 -   デフォルト値: `3.0`
 -   最小値: `0.0`
 

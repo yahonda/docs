@@ -313,7 +313,7 @@ tikv-ctl --host localhost:20160 region-properties -r 2
 -   `compact-cluster`コマンドでは、 `--pd`使用して PD のアドレスを指定し、 `tikv-ctl`クラスター内のすべての TiKV ノードをコンパクト ターゲットとして見つけられるようにします。
 -   `compact`コマンドでは、 `--data-dir`または`--host`使用して、単一の TiKV をコンパクト ターゲットとして指定します。
 
-### リージョンを墓石に設定する {#set-a-region-to-tombstone}
+### リージョンをtombstoneに設定する {#set-a-region-to-tombstone}
 
 `tombstone`コマンドは通常、 Raftステート マシンに書き込まれたデータの一部が電源オフによって失われた場合に使用されます。
 
