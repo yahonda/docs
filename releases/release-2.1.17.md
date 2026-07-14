@@ -14,7 +14,7 @@ TiDB Ansible バージョン: 2.1.17
 -   新機能
     -   TiDBの`SHOW TABLE REGIONS`構文に`WHERE`句を追加する
     -   TiKVとPDに`config-check`機能を追加して構成項目をチェックする
-    -   pd-ctlに`remove-tombstone`コマンドを追加して、トゥームストーンストアのレコードをクリアします。
+    -   pd-ctlに`remove-tombstone`コマンドを追加して、tombstoneストアのレコードをクリアします。
     -   Reparoに`worker-count`と`txn-batch`設定項目を追加して回復速度を制御します
 
 -   改善点
@@ -73,7 +73,7 @@ TiDB Ansible バージョン: 2.1.17
 ## PD {#pd}
 
 -   PDに`config-check`オプションを追加して、PD構成項目が有効かどうかを確認する[＃1725](https://github.com/pingcap/pd/pull/1725)
--   pd-ctlに`remove-tombstone`コマンドを追加して、トゥームストーンストアレコードのクリアをサポートする[＃1705](https://github.com/pingcap/pd/pull/1705)
+-   pd-ctlに`remove-tombstone`コマンドを追加して、tombstoneストアレコードのクリアをサポートする[＃1705](https://github.com/pingcap/pd/pull/1705)
 -   オペレーターのスケジュール調整を積極的に促進するサポート[＃1686](https://github.com/pingcap/pd/pull/1686)
 
 ## ツール {#tools}

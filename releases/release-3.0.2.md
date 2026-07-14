@@ -109,7 +109,7 @@ TiDB Ansible バージョン: 3.0.2
 
 -   Scatter リージョンスケジューラが動作しないバグを修正[＃1642](https://github.com/pingcap/pd/pull/1642)
 -   pd-ctl でマージリージョン操作が実行できないバグを修正しました [＃1653](https://github.com/pingcap/pd/pull/1653)
--   pd-ctl で削除トゥームストーン操作が実行できないバグを修正しました [＃1651](https://github.com/pingcap/pd/pull/1651)
+-   pd-ctl でtombstoneの削除操作が実行できないバグを修正しました [＃1651](https://github.com/pingcap/pd/pull/1651)
 -   スキャンリージョン操作実行するときに、キースコープと重複するリージョンが見つからない問題を修正しました [＃1648](https://github.com/pingcap/pd/pull/1648)
 -   PD にメンバーが正常に追加されたことを確認するための再試行メカニズムを追加します。 [＃1643](https://github.com/pingcap/pd/pull/1643)
 

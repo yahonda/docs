@@ -130,7 +130,7 @@ TiDB バージョン: 4.0.11
 -   PD
 
     -   メンバーの健康指標が正しく表示されない問題を修正[＃3368](https://github.com/pingcap/pd/pull/3368)
-    -   ピアまだ残っているトゥームストーンストアの削除を禁止する [＃3352](https://github.com/pingcap/pd/pull/3352)
+    -   ピアまだ残っているtombstoneストアの削除を禁止する [＃3352](https://github.com/pingcap/pd/pull/3352)
     -   ストア制限が維持できない問題を修正[＃3403](https://github.com/pingcap/pd/pull/3403)
     -   散布範囲スケジューラの制限制限を修正 [＃3401](https://github.com/pingcap/pd/pull/3401)
 
