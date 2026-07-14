@@ -79,7 +79,7 @@ TiDB バージョン: 4.0.11
     -   `like`関数が単一文字のワイルドカード ( `_` ) に続いて複数文字のワイルドカード ( `%` ) を処理するときに発生するバグを修正しました[＃22575](https://github.com/pingcap/tidb/pull/22575)
     -   TiDBの組み込み関数の型推論エラーを修正（ `least`と`greatest` ） [＃22562](https://github.com/pingcap/tidb/pull/22562)
     -   パターン文字列がUnicode文字列の場合に`like`関数が間違った結果を返すバグを修正しました [＃22529](https://github.com/pingcap/tidb/pull/22529)
-    -   `@@tidb_snapshot`変数が設定されている場合にポイント取得クエリがスナップショットデータを取得できないバグを修正しました [＃22527](https://github.com/pingcap/tidb/pull/22527)
+    -   `@@tidb_snapshot`変数が設定されている場合にPointGetクエリがスナップショットデータを取得できないバグを修正しました [＃22527](https://github.com/pingcap/tidb/pull/22527)
     -   結合からヒントを生成するときに発生する可能性のあるpanicを修正[＃22518](https://github.com/pingcap/tidb/pull/22518)
     -   文字列が`BIT`型に誤って変換される問題を修正 [＃22420](https://github.com/pingcap/tidb/pull/22420)
     -   `tidb_rowid`列目に値を挿入するときに発生する`index out of range`エラーを修正[＃22359](https://github.com/pingcap/tidb/pull/22359)

@@ -23,7 +23,7 @@ TiDB Ansible バージョン: 2.1.9
 -   `DISTINCT` に複数の列が存在する場合の`COUNT`関数の誤った結果の問題を修正しました [＃10270](https://github.com/pingcap/tidb/pull/10270)
 -   `LOAD DATA`不規則なCSVファイルを解析する際に発生するpanic問題を修正[＃10269](https://github.com/pingcap/tidb/pull/10269)
 -   `Index Lookup Join` で外部結合キーと内部結合キーの型が一致しない場合は、オーバーフローエラーを無視します。 [＃10244](https://github.com/pingcap/tidb/pull/10244)
--   一部のケースで誤ってポイント取得と判断される問題を修正[＃10299](https://github.com/pingcap/tidb/pull/10299)
+-   一部のケースで誤ってPointGetと判断される問題を修正[＃10299](https://github.com/pingcap/tidb/pull/10299)
 -   一部のケースで時間型がタイムゾーンを変換しない場合に誤った結果が出る問題を修正[＃10345](https://github.com/pingcap/tidb/pull/10345)
 -   TiDB の文字セットの大文字と小文字が一致しないケースがいくつかある問題を修正[＃10354](https://github.com/pingcap/tidb/pull/10354)
 -   演算子によって返される行数を制御するサポート [＃9166](https://github.com/pingcap/tidb/issues/9166)

@@ -121,7 +121,7 @@ TiDB バージョン: 4.0.6
     -   ビュー使用時に予期しないpanicが発生する問題を修正しました [＃19491](https://github.com/pingcap/tidb/pull/19491)
     -   `anti-semi-join`クエリの誤った結果を修正 [＃19477](https://github.com/pingcap/tidb/pull/19477)
     -   統計を削除しても統計`TopN`が削除されないバグを修正[＃19465](https://github.com/pingcap/tidb/pull/19465)
-    -   バッチポイント取得の誤った使用によって発生した誤った結果を修正 [＃19460](https://github.com/pingcap/tidb/pull/19460)
+    -   バッチPointGetの誤った使用によって発生した誤った結果を修正 [＃19460](https://github.com/pingcap/tidb/pull/19460)
     -   仮想生成列で`indexLookupJoin`が見つからないバグを修正 [＃19439](https://github.com/pingcap/tidb/pull/19439)
     -   `select`と`update`クエリの異なるプランがデータを比較するエラーを修正しました [＃19403](https://github.com/pingcap/tidb/pull/19403)
     -   リージョンキャッシュのTiFlash作業インデックスのデータ競合を修正 [＃19362](https://github.com/pingcap/tidb/pull/19362)

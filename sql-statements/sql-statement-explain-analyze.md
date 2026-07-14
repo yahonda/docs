@@ -100,7 +100,7 @@ EXPLAIN ANALYZE SELECT * FROM t1;
 -   `ResolveLock:{num_rpc:1, total_time:12.117495ms}` ：TiDBはデータの読み取り時にロックに遭遇した場合、まずロックを解決する必要があります。これは通常、読み取り/書き込み競合のシナリオで発生します。この情報は、ロック解決にかかる時間を示します。
 -   `regionMiss_backoff:{num:11, total_time:2010 ms},tikvRPC_backoff:{num:11, total_time:10691 ms}` : RPCリクエストが失敗した場合、TiDBはリクエストを再試行する前にバックオフ時間だけ待機します。バックオフ統計には、バックオフの種類（ `regionMiss` `tikvRPC` ）、合計待機時間（ `total_time` ）、バックオフの合計回数（ `num` ）が含まれます。
 
-### バッチポイント取得 {#batch-point-get}
+### バッチPointGet {#batch-point-get}
 
 `Batch_Point_Get`オペレータの実行情報は`Point_Get`オペレータと似ていますが、 `Batch_Point_Get`通常、データを読み取りするために`BatchGet` RPC 要求を TiKV に送信します。
 
