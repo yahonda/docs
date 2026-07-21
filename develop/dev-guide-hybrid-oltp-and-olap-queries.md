@@ -172,7 +172,7 @@ SELECT * FROM information_schema.tiflash_replica WHERE TABLE_SCHEMA = 'bookshop'
     +--------------+------------+----------+---------------+-----------------+-----------+----------+
     1 row in set (0.07 sec)
 
-レプリカを追加した後、 `EXPLAIN`ステートメントを使用して、上記のウィンドウ関数[`PARTITION BY`句](#partition-by-clause)の実行プランを確認できます。実行プランに`cop[tiflash]`表示されている場合は、 TiFlashエンジンが動作を開始したことを意味します。
+レプリカを追加した後、 `EXPLAIN`ステートメントを使用して、上記のウィンドウ関数[`PARTITION BY`句](#partition-by-clause)の実行プランを確認できます。実行プランに`cop[tiflash]`が表示されている場合は、 TiFlashエンジンが動作を開始したことを意味します。
 
 次に、 [`PARTITION BY`句](#partition-by-clause)のサンプルSQL文を再度実行します。結果は以下のようになります。
 
