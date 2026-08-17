@@ -53,7 +53,7 @@ TiDB Cloud Starter、 Essential、またはPremiumインスタンスがAmazon S3
     -   データをAmazon S3にエクスポートする場合は、次のように**「新しいARNの追加」**ダイアログを開きます。
 
         1.  **Export Data**をクリックします。
-        2.  **Amazon S3**で**Target Connection**を選択してください。
+        2.  **Target Connection**で**Amazon S3**を選択してください。
         3.  **Folder URI**欄に入力してください。
         4.  **AWS ロール ARN**を選択し、[**ここをクリックして AWS CloudFormation を使用して新しいロールを作成します] をクリックします**。
 
@@ -265,7 +265,7 @@ Azure ARMテンプレートを使用してSASトークンを作成するには�
     -   データをAzure Blob Storageにエクスポートする場合：
 
         1.  **Export Data**をクリックします。
-        2.  **ターゲット接続**で**Target Connection**を選択してください。
+        2.  **Target Connection**で**Azure Blob Storage**を選択してください。
         3.  SASトークンフィールドの下にある**「ここをクリックして、Azure ARMテンプレートを使用して新しいものを作成してください」をクリックしてください**。
 
     </CustomContent>
