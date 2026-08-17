@@ -124,15 +124,17 @@ TiDB Cloud Premiumでは、チェンジフィードのTiCDC Changefeed容量ユ�
     <CustomContent plan="premium">
 
     -   Apache Kafkaシンク：すべての設定。
-    -   MySQLシンク： **MySQL接続**、**Table Filter**、および**Event Filter**。
+    -   MySQLシンク： **MySQL Connection**、**Table Filter**、および**Event Filter**。
+: restore genuine 2-word TiDB Cloud UI labels to English (unconfirmed batch))
 
     </CustomContent>
     <CustomContent plan="dedicated">
 
     -   Apache Kafkaシンク：すべての設定。
-    -   MySQLシンク： **MySQL接続**、**Table Filter**、および**Event Filter**。
+    -   MySQLシンク： **MySQL Connection**、**Table Filter**、および**Event Filter**。
     -   TiDB Cloudシンク: **TiDB Cloud接続**、**Table Filter**、および**Event Filter**。
     -   クラウドストレージシンク：**Storage Endpoint**、**Table Filter**、および**Event Filter**。
+: restore genuine 2-word TiDB Cloud UI labels to English (unconfirmed batch))
 
     </CustomContent>
 

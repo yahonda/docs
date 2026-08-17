@@ -54,7 +54,7 @@ Airbyteのバナーが表示されたら、ユーザー名（ `airbyte` ）と�
 
     TiDB Cloudコンソールの接続ダイアログからパラメーター値を取得できます。ダイアログを開くには、[**My TiDB**](https://tidbcloud.com/tidbs)ページに移動し、ターゲットの<CustomContent plan="starter">TiDB Cloud Starterインスタンス</CustomContent><CustomContent plan="essential">TiDB Cloud Essentialインスタンス</CustomContent><CustomContent plan="premium">TiDB Cloud Premiumインスタンス</CustomContent><CustomContent plan="dedicated">TiDB Cloud Dedicatedクラスター</CustomContent>クラスターの名前をクリックして概要ページに移動し、右上隅の**Connect**をクリックします。
 
-3.  **SSL接続**を有効にし、 **JDBC URLパラメータ**でTLSプロトコルを**TLSv1.2**または**TLSv1.3**に設定します。
+3.  **SSL Connection**を有効にし、 **JDBC URLパラメータ**でTLSプロトコルを**TLSv1.2**または**TLSv1.3**に設定します。
 
     > **Note:**
     >
@@ -82,11 +82,11 @@ TiDB コネクタの詳細については、 [TiDBソース](https://docs.airbyt
 
 3.  接続**Set up**パネルに移動し、 `${source_name} - ${destination-name}`などの接続名を作成します。
 
-4.  **レプリケーション頻度を****「24時間ごと**」に設定すると、接続は1日に1回データを複製します。
+4.  **Replication frequency**を**Every 24 hours**に設定すると、接続は1日に1回データを複製します。
 
-5.  **宛先名前空間を****カスタム形式**に設定し、**名前空間カスタム形式**を**テスト**に設定して、すべてのデータを`test`データベースに保存します。
+5.  **Destination Namespace**を**カスタム形式**に設定し、**名前空間カスタム形式**を**テスト**に設定して、すべてのデータを`test`データベースに保存します。
 
-6.  **同期モード**を**「完全更新」または「上書き」**に選択してください。
+6.  **Sync mode**を**「完全更新」または「上書き」**に選択してください。
 
     > **Tip:**
     >
@@ -101,7 +101,7 @@ TiDB コネクタの詳細については、 [TiDBソース](https://docs.airbyt
 
 8.  **「接続設定」**をクリックしてください。
 
-9.  接続が確立されたら、 **「有効」**をクリックして同期タスクをアクティブ化します。また、 **「今すぐ同期」**をクリックすると、すぐに同期を開始できます。
+9.  接続が確立されたら、 **「有効」**をクリックして同期タスクをアクティブ化します。また、 **Sync now**をクリックすると、すぐに同期を開始できます。
 
 ![Sync data](/media/tidb-cloud/integration-airbyte-sync.jpg)
 

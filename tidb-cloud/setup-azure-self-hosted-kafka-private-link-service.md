@@ -92,20 +92,21 @@ summary: このドキュメントでは、Azure でセルフホスト型 Kafka �
 1.  [Azureポータル](https://portal.azure.com/)にログインし、 [仮想マシン](https://portal.azure.com/#view/Microsoft_Azure_ComputeHub/ComputeHubMenuBlade/~/virtualMachinesBrowse)ページに移動して**+ Create**をクリックし、 **[Azure 仮想マシン]**を選択します。
 2.  **[基本]**タブで、**サブスクリプション**、**Resource group**、**リージョン**を選択し、次の情報を入力して、 **[次へ: ディスク]**をクリックします。
     -   **仮想マシン名**: `broker-node`
-    -   **利用可能オプション**: `Availability zone`
-    -   **ゾーンオプション**: `Self-selected zone`
+    -   **Availability options**: `Availability zone`
+    -   **Zone options**: `Self-selected zone`
     -   `Zone 3` `Zone 2`**Availability zone**: `Zone 1`
+: restore genuine 2-word TiDB Cloud UI labels to English (unconfirmed batch))
     -   **画像**： `Ubuntu Server 24.04 LTS - x64 Gen2`
-    -   **VMアーキテクチャ：** `x64`
+    -   **VM architecture:** `x64`
     -   **サイズ**: `Standard_D2s_v3`
-    -   **認証タイプ**: `SSH public key`
+    -   **Authentication type**: `SSH public key`
     -   **ユーザー名**: `azureuser`
     -   **SSH公開鍵ソース:** `Generate new key pair`
     -   **キーペア名**: `kafka_broker_key`
     -   **パブリック受信ポート**: `Allow selected ports`
     -   **受信ポートを選択**: `SSH (22)`
 3.  **[次へ: ネットワーク]**をクリックし、 **[ネットワーク]**タブに次の情報を入力します。
-    -   **仮想ネットワーク**： `kafka-pls-vnet`
+    -   **Virtual network**： `kafka-pls-vnet`
     -   **サブネット**: `brokers-subnet`
     -   **Public IP** : `None`
     -   **NIC ネットワーク セキュリティ グループ**: `Basic`
@@ -124,7 +125,7 @@ summary: このドキュメントでは、Azure でセルフホスト型 Kafka �
 
 2.  ブローカー ノードの各ページで、左側のナビゲーション ペインの**[接続] &gt; [Bastion]**をクリックし、次の情報を入力します。
 
-    -   **認証タイプ**: `SSH Private Key from Local File`
+    -   **Authentication Type**: `SSH Private Key from Local File`
     -   **ユーザー名**: `azureuser`
     -   **Local File**: 以前にダウンロードした秘密鍵ファイルを選択します
     -   **「新しいブラウザタブで開く」**オプションを選択します
@@ -438,30 +439,31 @@ b3.abc.eastus.azure.3199745.tidbcloud.com:9095 (id: 3 rack: null) -> ERROR: org.
 3.  **[フロントエンド IP 構成]**タブで、 **[+ フロントエンド IP 構成の追加]**をクリックし、次の情報を入力して**[保存]**をクリックし、 **[次へ: バックエンド プール &gt;]**をクリックします。
 
     -   **名前**: `kafka-lb-ip`
-    -   **IP バージョン**: `IPv4`
-    -   **仮想ネットワーク**： `kafka-pls-vnet`
+    -   **IP version**: `IPv4`
+    -   **Virtual network**： `kafka-pls-vnet`
     -   **サブネット**: `brokers-subnet`
     -   **課題**： `Dynamic`
     -   **Availability zone**: `Zone-redundant`
 
-4.  **[バックエンド プール]**タブで、次の 3 つのバックエンド プールを追加し、 **[次へ: 受信規則]**をクリックします。
+4.  **Backend pools**タブで、次の 3 つのバックエンド プールを追加し、 **Next : Inbound rules**をクリックします。
 
     -   名前: `pool1` ; バックエンド プールコンフィグレーション: `NIC` ; IP 構成: `broker-node-1`
     -   名前: `pool2` ; バックエンド プールコンフィグレーション: `NIC` ; IP 構成: `broker-node-2`
     -   名前: `pool3` ; バックエンド プールコンフィグレーション: `NIC` ; IP 構成: `broker-node-3`
 
-5.  **[受信規則]**タブで、次の 3 つの負荷分散規則を追加します。
+5.  **Inbound rules**タブで、次の 3 つの負荷分散規則を追加します。
 
     1.  ルール1
 
         -   **名前**: `rule1`
-        -   **IP バージョン**: `IPv4`
+        -   **IP version**: `IPv4`
         -   **フロントエンドIPアドレス**: `kafka-lb-ip`
-        -   **バックエンドプール**: `pool1`
+        -   **Backend pool**: `pool1`
         -   **プロトコル**： `TCP`
         -   **ポート**: `9093`
-        -   **バックエンドポート**: `39092`
-        -   **ヘルスプローブ**: **Create New**をクリックし、プローブ情報を入力します。
+        -   **Backend port**: `39092`
+        -   **Health probe**: **Create New**をクリックし、プローブ情報を入力します。
+: restore genuine 2-word TiDB Cloud UI labels to English (unconfirmed batch))
             -   **名前**: `kafka-lb-hp`
             -   **プロトコル**： `TCP`
             -   **ポート**: `39092`
@@ -469,13 +471,14 @@ b3.abc.eastus.azure.3199745.tidbcloud.com:9095 (id: 3 rack: null) -> ERROR: org.
     2.  ルール2
 
         -   **名前**: `rule2`
-        -   **IP バージョン**: `IPv4`
+        -   **IP version**: `IPv4`
         -   **フロントエンドIPアドレス**: `kafka-lb-ip`
-        -   **バックエンドプール**: `pool2`
+        -   **Backend pool**: `pool2`
         -   **プロトコル**： `TCP`
         -   **ポート**: `9094`
-        -   **バックエンドポート**: `39092`
-        -   **ヘルスプローブ**: **Create New**をクリックし、プローブ情報を入力します。
+        -   **Backend port**: `39092`
+        -   **Health probe**: **Create New**をクリックし、プローブ情報を入力します。
+: restore genuine 2-word TiDB Cloud UI labels to English (unconfirmed batch))
             -   **名前**: `kafka-lb-hp`
             -   **プロトコル**： `TCP`
             -   **ポート**: `39092`
@@ -483,13 +486,14 @@ b3.abc.eastus.azure.3199745.tidbcloud.com:9095 (id: 3 rack: null) -> ERROR: org.
     3.  ルール3
 
         -   **名前**: `rule3`
-        -   **IP バージョン**: `IPv4`
+        -   **IP version**: `IPv4`
         -   **フロントエンドIPアドレス**: `kafka-lb-ip`
-        -   **バックエンドプール**: `pool3`
+        -   **Backend pool**: `pool3`
         -   **プロトコル**： `TCP`
         -   **ポート**: `9095`
-        -   **バックエンドポート**: `39092`
-        -   **ヘルスプローブ**: **Create New**をクリックし、プローブ情報を入力します。
+        -   **Backend port**: `39092`
+        -   **Health probe**: **Create New**をクリックし、プローブ情報を入力します。
+: restore genuine 2-word TiDB Cloud UI labels to English (unconfirmed batch))
             -   **名前**: `kafka-lb-hp`
             -   **プロトコル**： `TCP`
             -   **ポート**: `39092`
@@ -504,16 +508,16 @@ b3.abc.eastus.azure.3199745.tidbcloud.com:9095 (id: 3 rack: null) -> ERROR: org.
 
 2.  **[基本]**タブで、 **[サブスクリプ**ション]、 **Resource group** 、 **[リージョン]**を選択し、[**名前]**フィールドに`kafka-pls`入力して、 **[次へ: 送信設定 &gt;]**をクリックします。
 
-3.  **[送信設定]**タブで、次のようにパラメータを入力し、 **[次へ: アクセス セキュリティ &gt;]**をクリックします。
+3.  **Outbound settings**タブで、次のようにパラメータを入力し、 **Next : Access security &gt;**をクリックします。
 
-    -   **ロードバランサー**： `kafka-lb`
+    -   **Load balancer**： `kafka-lb`
     -   **ロードバランサのフロントエンド IP アドレス**: `kafka-lb-ip`
     -   **送信元NATサブネット**: `kafka-pls-vnet/brokers-subnet`
 
-4.  **[アクセス セキュリティ]**タブで、次の操作を行います。
+4.  **Access security**タブで、次の操作を行います。
 
     -   **表示**については、 **「サブスクリプションにより制限」**または**「エイリアスを持つすべてのユーザー」**を選択します。
-    -   **サブスクリプション レベルのアクセスと自動承認**については、[サブスクリプション**の追加]**をクリックして、 [前提条件](#prerequisites)で取得したTiDB Cloud Azure アカウントのサブスクリプションを追加します。
+    -   **サブスクリプション レベルのアクセスと自動承認**については、**Add subscriptions**をクリックして、 [前提条件](#prerequisites)で取得したTiDB Cloud Azure アカウントのサブスクリプションを追加します。
 
 5.  **「次へ: タグ &gt;」**をクリックし、 **「次へ: 確認と作成 &gt;」**をクリックして情報を確認します。
 
